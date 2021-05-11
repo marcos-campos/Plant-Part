@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:alpha="0.9">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="PLANT APP"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/et_usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.162"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:paddingStart="15dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/et_usuario"
+        android:hint="Login"
+        android:textColorHint="@color/white"
+        android:textSize="18dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/white"
+        android:imeOptions="actionNext"
+        android:inputType="textCapSentences"
+        android:textStyle="bold"
+
+        android:backgroundTint="@color/black" />
+
+    <EditText
+        android:id="@+id/et_senha"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="monospace"
+        android:hint="Senha"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:paddingStart="15dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_usuario"
+        app:passwordToggleEnabled="false"
+        android:textStyle="bold"
+        android:alpha="9.0"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="35sp"
+        app:layout_constraintTop_toBottomOf="@+id/et_senha"
+        android:backgroundTint="@color/black"
+        android:id="@+id/btn_login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registre-se com o Gmail"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="35dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:id="@+id/tv_gmail"
+        android:textStyle="bold"
+        android:alpha="9.1"/>
+
+<!--    <ImageView-->
+<!--        android:layout_width="20dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:src="@drawable/gmail"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/tv_gmail"-->
+<!--        app:layout_constraintTop_toTopOf="@id/tv_gmail"-->
+<!--        android:layout_marginEnd="10dp"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registre-se com o Facebook"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:id="@+id/tv_facebook"
+        android:textStyle="bold"/>
+
+<!--    <ImageView-->
+<!--        android:layout_width="20dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:src="@drawable/facebook"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/tv_facebook"-->
+<!--        app:layout_constraintTop_toTopOf="@id/tv_facebook"-->
+<!--        android:layout_marginEnd="10dp"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
