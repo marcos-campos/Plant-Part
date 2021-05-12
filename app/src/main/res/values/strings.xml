@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">PlantPart</string>
+    <string name="plant_part">PLANT PART</string>
+    <string name="login">Login</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="registre_se_com_o_gmail">Registre-se com o Gmail</string>
+    <string name="registre_se_com_o_facebook">Registre-se com o Facebook</string>
 </resources>
