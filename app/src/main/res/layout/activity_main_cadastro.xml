@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/minimalist"
+    android:orientation="vertical"
+    tools:context=".ActivityMainCadastroGmail"
+    >
+
+
+    <TextView
+        android:id="@+id/textViewCadastro"
+        android:layout_width="218dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="44dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Crie sua conta"
+        android:textColor="@color/black"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="108dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="92dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/plant_part"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="108dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/arv"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="296dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="476dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:hint="@string/Username"
+        android:imeOptions="actionNext"
+        android:inputType="textCapSentences"
+        android:paddingStart="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.565"
+
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:layout_width="29dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="10dp"
+        android:alpha="9.1"
+        android:background="@drawable/ic_baseline_account_circle_24"
+        android:backgroundTint="#100E0E"
+        android:outlineAmbientShadowColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/username"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="35dp"
+        android:background="@drawable/email"
+        android:backgroundTint="#121111"
+        app:layout_constraintEnd_toStartOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="282dp" />
+
+    <EditText
+
+        android:id="@+id/email"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:hint="E-mail"
+        android:imeOptions="actionNext"
+        android:inputType="textCapSentences"
+        android:paddingStart="15dp"
+        android:textColor="#403F3F"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/username"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="293dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:hint="@string/Password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/email"
+        app:passwordToggleEnabled="false"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="26dp"
+        android:background="@drawable/ic_baseline_https_24"
+        android:backgroundTint="#0E0D0D"
+        app:layout_constraintEnd_toStartOf="@+id/Password"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <EditText
+        android:id="@+id/conf_password"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:hint="@string/Password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Password" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="7dp"
+        android:background="@drawable/ic_baseline_https_24"
+        android:backgroundTint="#0E0D0D"
+        app:layout_constraintEnd_toStartOf="@+id/conf_password"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="419dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startToEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:alpha="0.9"
+        android:background="@drawable/backgroud_bt"
+        android:text="SIGN UP"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/conf_password"
+        app:layout_constraintVertical_bias="0.081" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
