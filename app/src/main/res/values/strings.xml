@@ -6,4 +6,10 @@
     <string name="entrar">Entrar</string>
     <string name="registre_se_com_o_gmail">Registre-se com o Gmail</string>
     <string name="registre_se_com_o_facebook">Registre-se com o Facebook</string>
+    <string name="Nome" />
+    <string name="Nome_">Nome Usuario</string>
+    <string name="Nm">"Nome "</string>
+    <string name="Username">Username</string>
+    <string name="Email" />
+    <string name="Password">Password</string>
 </resources>
