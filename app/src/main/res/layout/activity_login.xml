@@ -7,8 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/minimalist"
     android:alpha="0.9"
-    tools:ignore="ExtraText"
-   >
+    tools:ignore="ExtraText">
 
     <TextView
         android:id="@+id/textView"
@@ -31,7 +30,7 @@
         android:layout_width="144dp"
         android:layout_height="114dp"
         android:layout_marginTop="4dp"
-        android:background="@drawable/arv"
+        android:background="@drawable/logo"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -66,7 +65,8 @@
         android:background="@drawable/ic_baseline_account_circle_24"
         android:backgroundTint="#131212"
         app:layout_constraintEnd_toStartOf="@+id/et_senha"
-        tools:layout_editor_absoluteY="214dp" />
+        tools:layout_editor_absoluteY="214dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:layout_width="34dp"
@@ -76,7 +76,8 @@
         app:layout_constraintEnd_toStartOf="@+id/et_senha"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="283dp" />
+        tools:layout_editor_absoluteY="283dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/et_senha"
@@ -96,8 +97,7 @@
         app:layout_constraintTop_toBottomOf="@+id/et_usuario"
         app:passwordToggleEnabled="false"
         android:textStyle="bold"
-        tools:ignore="RtlSymmetry"
-        />
+        tools:ignore="RtlSymmetry" />
 
     <androidx.appcompat.widget.AppCompatButton
 
@@ -113,10 +113,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_senha"
-
-
-        />
+        app:layout_constraintTop_toBottomOf="@+id/et_senha" />
 
     <TextView
 
@@ -150,8 +147,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
-
-
         app:layout_constraintTop_toBottomOf="@+id/et_senha" />
 
 

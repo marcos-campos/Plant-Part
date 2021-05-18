@@ -6,9 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/minimalist"
     android:orientation="vertical"
-    tools:context=".ActivityMainCadastroGmail"
-    >
-
+    tools:context=".ActivityLogin">
 
     <TextView
         android:id="@+id/textViewCadastro"
@@ -49,7 +47,7 @@
         android:layout_width="108dp"
         android:layout_height="89dp"
         android:layout_marginTop="4dp"
-        android:background="@drawable/arv"
+        android:background="@drawable/arvore"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.095"
@@ -75,7 +73,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.565"
-
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="RtlSymmetry" />
 
@@ -90,7 +87,8 @@
         app:layout_constraintEnd_toStartOf="@+id/username"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="218dp" />
+        tools:layout_editor_absoluteY="218dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:layout_width="36dp"
@@ -100,7 +98,8 @@
         app:layout_constraintEnd_toStartOf="@+id/email"
         app:layout_constraintHorizontal_bias="0.766"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="282dp" />
+        tools:layout_editor_absoluteY="282dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
 
@@ -137,7 +136,7 @@
         android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:paddingStart="15dp"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@android:color/black"
         android:textColorHint="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -156,7 +155,8 @@
         app:layout_constraintEnd_toStartOf="@+id/Password"
         app:layout_constraintHorizontal_bias="0.774"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="350dp" />
+        tools:layout_editor_absoluteY="350dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/conf_password"
@@ -169,7 +169,7 @@
         android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:paddingStart="15dp"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@android:color/black"
         android:textColorHint="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -187,10 +187,11 @@
         app:layout_constraintEnd_toStartOf="@+id/conf_password"
         app:layout_constraintHorizontal_bias="0.931"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="419dp" />
+        tools:layout_editor_absoluteY="419dp"
+        tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/startToEnd"
+        android:id="@+id/btn_cadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -202,7 +203,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/conf_password"
         app:layout_constraintVertical_bias="0.081" />
