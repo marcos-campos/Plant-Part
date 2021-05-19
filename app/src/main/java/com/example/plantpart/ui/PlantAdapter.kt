@@ -1,5 +1,6 @@
 package com.example.plantpart.ui
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -23,5 +24,13 @@ class PlantAdapter(val listPlants: MutableList<Plant>): RecyclerView.Adapter<Pla
 
         val imagem = holder.imagePlant
         imagem.setImageResource(listPlants[position].imagemPlanta)
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(it.context, Details::class.java)
+
+            intent.putExtra("plantas", listPlants[position])
+
+            it.context.startActivity(intent)
+        }
     }
 }

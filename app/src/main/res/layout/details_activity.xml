@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/details_titulo"
+        android:text="Nome Planta"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="280dp"
+        android:id="@+id/details_imagem"
+        app:layout_constraintTop_toBottomOf="@+id/details_titulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/details_descricao"
+        app:layout_constraintTop_toBottomOf="@+id/details_imagem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="casual"
+        android:text="Descrição"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/details_info_main"
+        app:layout_constraintTop_toBottomOf="@+id/details_descricao"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="casual"
+        android:text="Locais:"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/details_info"
+        app:layout_constraintTop_toBottomOf="@+id/details_descricao"
+        app:layout_constraintStart_toEndOf="@+id/details_info_main"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="casual"
+        android:text="Informações"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horarios"
+        android:text="Rega: "
+        app:layout_constraintTop_toBottomOf="@+id/details_info_main"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:fontFamily="casual"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/details_horario_rega"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/details_info"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:fontFamily="casual"
+        app:layout_constraintStart_toEndOf="@+id/horarios"
+        android:layout_marginStart="15dp"/>
+
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/details_regar"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/details_info"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:fontFamily="casual"-->
+<!--        android:text="Horário para regar"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="@color/white"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
